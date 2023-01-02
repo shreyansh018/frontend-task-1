@@ -8,6 +8,7 @@ import {
 import { Stack } from "@mui/system";
 import React from "react";
 import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
+import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import "../App.css";
 
 const MyButton = styled(Button)({
@@ -257,6 +258,35 @@ function Buttons() {
         </Stack>
         {/* 4th col end*/}
       </Stack>
+
+      {/* secondary button start */}
+      <Stack
+        direction="row"
+        justifyContent="center"
+        spacing={20}
+        marginRight={20}
+        paddingRight={30}
+      >
+        <Stack>
+          <Typography color="GrayText" fontSize="20px" paddingBottom={2}>
+            Secondary Button
+          </Typography>
+          <Button variant="outlined">
+            <ArrowBackIcon />
+            <Typography
+              marginTop={1}
+              marginBottom={1}
+              marginLeft={2}
+              marginRight={2}
+              fontSize="15px"
+              color="black"
+            >
+              Secondary Button
+            </Typography>
+          </Button>
+        </Stack>
+      </Stack>
+      {/* secondary button end */}
     </ThemeProvider>
   );
 }
