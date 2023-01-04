@@ -274,7 +274,8 @@ function Buttons() {
 
       {/* secondary button start */}
       <Stack
-        direction={{ sm: "column", md: "row" }}
+        direction={{ sm: "column", md: "row", lg: "row" }}
+        paddingLeft={{ md: 10, lg: 15 }}
         marginLeft={{ xs: 0, sm: 10, md: 26, lg: 33 }}
         marginRight={{ xs: 15, sm: 18, md: 5 }}
         marginTop={{ xs: 10 }}
