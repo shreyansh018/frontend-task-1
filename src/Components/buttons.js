@@ -42,7 +42,13 @@ const theme = createTheme({
 function Buttons() {
   return (
     <ThemeProvider theme={theme}>
-      <Stack spacing={20} direction="row" justifyContent="center">
+      <Stack
+        spacing={{ xs: 10, sm: 10, md: 20 }}
+        marginLeft={{ xs: 0, sm: 10, md: 5 }}
+        marginRight={{ xs: 15, sm: 18, md: 5 }}
+        direction={{ sm: "column", md: "row" }}
+        justifyContent="center"
+      >
         {/* first col */}
         <Stack spacing={4}>
           <Typography color="GrayText" fontSize="20px">
@@ -56,7 +62,7 @@ function Buttons() {
                 marginTop={1}
                 marginBottom={1}
                 marginLeft={4.5}
-                marginRight={4.5}
+                marginRight={4}
                 fontSize="15px"
               >
                 Primary Button
@@ -154,7 +160,14 @@ function Buttons() {
         {/* second col end*/}
       </Stack>
 
-      <Stack spacing={20} margin={5} direction="row" justifyContent="center">
+      <Stack
+        spacing={{ xs: 10, sm: 10, md: 20 }}
+        marginLeft={{ xs: 0, sm: 10, md: 5 }}
+        marginRight={{ xs: 15, sm: 18, md: 5 }}
+        marginTop={{ xs: 10 }}
+        direction={{ sm: "column", md: "row" }}
+        justifyContent="center"
+      >
         {/* 3rd col */}
         <Stack spacing={4}>
           <Typography color="GrayText" fontSize="20px">
@@ -261,11 +274,10 @@ function Buttons() {
 
       {/* secondary button start */}
       <Stack
-        direction="row"
-        justifyContent="center"
-        spacing={20}
-        marginRight={20}
-        paddingRight={30}
+        direction={{ sm: "column", md: "row" }}
+        marginLeft={{ xs: 0, sm: 10, md: 26, lg: 33 }}
+        marginRight={{ xs: 15, sm: 18, md: 5 }}
+        marginTop={{ xs: 10 }}
       >
         <Stack>
           <Typography color="GrayText" fontSize="20px" paddingBottom={2}>
